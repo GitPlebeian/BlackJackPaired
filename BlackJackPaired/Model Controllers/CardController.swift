@@ -37,8 +37,8 @@ class CardController {
                 var time = 0
                 while time < 4 {
                     finalDeck.append(card)
+                    time += 1
                 }
-                time += 1
             }
             return finalDeck
         }()
