@@ -10,12 +10,11 @@ import Foundation
 
 extension Hand {
     
-    static func getInitialHand() -> Hand{
-        let hand = Hand()
-        hand.cards.append(CardController.shared.getCard())
-        hand.cards.append(CardController.shared.getCard())
-        hand.calculateValue()
-        return hand
+    func setInitialHand(){
+        cards = []
+        cards.append(CardController.shared.getCard())
+        cards.append(CardController.shared.getCard())
+        calculateValue()
     }
     
     func hit() {
