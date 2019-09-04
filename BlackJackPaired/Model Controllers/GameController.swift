@@ -27,7 +27,7 @@ class GameController  {
     }
     
     func placeBet(int: Int) {
-        player.bet = 0
+        player.bet = int
     }
     
     func isHouse21() -> Bool {
@@ -47,27 +47,40 @@ class GameController  {
     }
     
     func playerWon21() {
-    
+        player.cash += player.bet * 2
     }
     
     func playerWon() {
-        
+        player.cash += player.bet
     }
     
     func playerLost() {
-        
+        player.cash -= player.bet
     }
     
     func isPlayerBust() -> Bool {
-        return true
+        return player.hand.isBust()
     }
     
     func isHouseBust() -> Bool {
-        return true
+        return house.hand.isBust()
+    }
+    
+    func getPlayerCash() -> Int {
+        return player.cash
+    }
+    
+    func getPlayerHand() -> [Card] {
+        return player.hand.cards
+    }
+    
+    func getHouseHand() -> [Card] {
+        return house.hand.cards
     }
     
     func houseHit(completion: (Card, Bool) -> Void) {
-        completion(Card(title: "3", value: 3), false)
+        house.hand.hit()
+        completion(house.hand.cards[house.hand.cards.count - 1], house.hand.isBust())
     }
     
     func playerHit(completion: (Card) -> Void) {
