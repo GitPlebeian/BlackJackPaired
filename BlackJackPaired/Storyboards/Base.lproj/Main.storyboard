@@ -187,6 +187,7 @@
                         <outlet property="dealerCardTwoLabel" destination="JEa-T0-Z9m" id="vCB-gD-Fyd"/>
                         <outlet property="dealerCardsStackView" destination="Nfr-Ww-1IX" id="1yo-uy-crZ"/>
                         <outlet property="moneyLabel" destination="oav-ud-dvH" id="t3B-TA-tgZ"/>
+                        <outlet property="moneyValueSlider" destination="gNG-ZV-u2i" id="fv0-8f-1iV"/>
                         <outlet property="playerCardOneLabel" destination="STS-AT-30K" id="C3W-z1-iN5"/>
                         <outlet property="playerCardTwoLabel" destination="oqQ-fP-Uwt" id="FlY-ND-Fph"/>
                     </connections>

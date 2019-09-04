@@ -17,10 +17,12 @@ class BlackJackViewController: UIViewController {
     @IBOutlet weak var playerCardTwoLabel: UILabel!
     @IBOutlet weak var moneyLabel: UILabel!
     @IBOutlet weak var dealerCardsStackView: UIStackView!
+    @IBOutlet weak var moneyValueSlider: UISlider!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupMoneySlider()
     }
     
     @IBAction func resetButtonTapped(_ sender: Any) {
@@ -33,9 +35,6 @@ class BlackJackViewController: UIViewController {
     
     @IBAction func hitButtonTapped(_ sender: Any) {
         addLabelToStackView()
-        
-        
-        
         
     }
     
@@ -54,5 +53,11 @@ class BlackJackViewController: UIViewController {
     
     func addLabelToStackView() {
         dealerCardsStackView.addSubview(newLabel)
+    }
+    
+    func setupMoneySlider() {
+        moneyValueSlider.value = 5
+        moneyValueSlider.minimumValue = 1
+        moneyValueSlider.maximumValue = 20
     }
 }
