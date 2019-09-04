@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Black Jack View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlackJackPaired" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BlackJackViewController" customModule="BlackJackPaired" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +36,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tew-LN-hSt"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="SId-7u-DAy">
                                 <rect key="frame" x="133" y="382" width="109" height="40"/>
@@ -118,11 +121,17 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gNG-ZV-u2i">
                                 <rect key="frame" x="37" y="512" width="301" height="31"/>
+                                <connections>
+                                    <action selector="moneySliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="61a-b7-8S2"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEv-1r-7JJ">
                                 <rect key="frame" x="55" y="562" width="64" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Stand"/>
+                                <connections>
+                                    <action selector="standButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NpZ-ea-lri"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oi-ue-A7m">
                                 <rect key="frame" x="224" y="562" width="92" height="42"/>
@@ -132,6 +141,16 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Hit"/>
+                                <connections>
+                                    <action selector="hitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAi-gT-yW6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGs-0g-4Zi">
+                                <rect key="frame" x="249" y="467" width="77" height="30"/>
+                                <state key="normal" title="Place Bet"/>
+                                <connections>
+                                    <action selector="placeBetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9jt-iM-qsd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,6 +159,7 @@
                             <constraint firstItem="Nfr-Ww-1IX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="144" id="1Jc-6j-YaO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YEv-1r-7JJ" secondAttribute="bottom" constant="63" id="3rK-wm-44x"/>
                             <constraint firstItem="Nfr-Ww-1IX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="6bX-q9-zMg"/>
+                            <constraint firstItem="gNG-ZV-u2i" firstAttribute="top" secondItem="yGs-0g-4Zi" secondAttribute="bottom" constant="15" id="7aA-2S-QJK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SId-7u-DAy" secondAttribute="trailing" constant="133" id="8Tn-zk-pfu"/>
                             <constraint firstItem="oav-ud-dvH" firstAttribute="top" secondItem="tAQ-pj-Zra" secondAttribute="bottom" constant="95" id="8qn-3P-wKg"/>
                             <constraint firstItem="gNG-ZV-u2i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CwU-N6-o9L"/>
@@ -157,10 +177,19 @@
                             <constraint firstItem="gNG-ZV-u2i" firstAttribute="top" secondItem="SId-7u-DAy" secondAttribute="bottom" constant="90" id="nYJ-xK-EfG"/>
                             <constraint firstItem="YEv-1r-7JJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="oJ7-o4-yuS"/>
                             <constraint firstItem="mgE-59-Ftc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="tdE-rQ-2ug"/>
+                            <constraint firstItem="yGs-0g-4Zi" firstAttribute="leading" secondItem="oav-ud-dvH" secondAttribute="trailing" constant="111" id="yxW-TG-GNj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5oi-ue-A7m" secondAttribute="bottom" constant="63" id="zbB-f7-20e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dealerCardOneLabel" destination="Oc3-Nf-ySV" id="XLC-Fq-oAB"/>
+                        <outlet property="dealerCardTwoLabel" destination="JEa-T0-Z9m" id="vCB-gD-Fyd"/>
+                        <outlet property="dealerCardsStackView" destination="Nfr-Ww-1IX" id="1yo-uy-crZ"/>
+                        <outlet property="moneyLabel" destination="oav-ud-dvH" id="t3B-TA-tgZ"/>
+                        <outlet property="playerCardOneLabel" destination="STS-AT-30K" id="C3W-z1-iN5"/>
+                        <outlet property="playerCardTwoLabel" destination="oqQ-fP-Uwt" id="FlY-ND-Fph"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
