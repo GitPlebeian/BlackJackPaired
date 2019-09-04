@@ -11,6 +11,10 @@
 		8669208023202EDB007F05C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8669207E23202EDB007F05C4 /* Main.storyboard */; };
 		8669208223202EDC007F05C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8669208123202EDC007F05C4 /* Assets.xcassets */; };
 		8669208523202EDC007F05C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8669208323202EDC007F05C4 /* LaunchScreen.storyboard */; };
+		86692094232036AA007F05C4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692093232036AA007F05C4 /* Card.swift */; };
+		86692098232037C4007F05C4 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692097232037C4007F05C4 /* CardController.swift */; };
+		8669209A232049BC007F05C4 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692099232049BC007F05C4 /* Hand.swift */; };
+		8669209C23204AF3007F05C4 /* HandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8669209B23204AF3007F05C4 /* HandController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		8669208123202EDC007F05C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8669208423202EDC007F05C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8669208623202EDC007F05C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86692093232036AA007F05C4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		86692097232037C4007F05C4 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		86692099232049BC007F05C4 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		8669209B23204AF3007F05C4 /* HandController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,8 @@
 		8669208D2320309D007F05C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				86692093232036AA007F05C4 /* Card.swift */,
+				86692099232049BC007F05C4 /* Hand.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -83,6 +93,8 @@
 		8669208E232030A1007F05C4 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				86692097232037C4007F05C4 /* CardController.swift */,
+				8669209B23204AF3007F05C4 /* HandController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -188,7 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8669209A232049BC007F05C4 /* Hand.swift in Sources */,
 				8669207B23202EDB007F05C4 /* AppDelegate.swift in Sources */,
+				86692098232037C4007F05C4 /* CardController.swift in Sources */,
+				8669209C23204AF3007F05C4 /* HandController.swift in Sources */,
+				86692094232036AA007F05C4 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
