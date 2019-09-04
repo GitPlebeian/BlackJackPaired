@@ -12,7 +12,7 @@
 		8669208223202EDC007F05C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8669208123202EDC007F05C4 /* Assets.xcassets */; };
 		8669208523202EDC007F05C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8669208323202EDC007F05C4 /* LaunchScreen.storyboard */; };
 		86692094232036AA007F05C4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692093232036AA007F05C4 /* Card.swift */; };
-		86692098232037C4007F05C4 /* DeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692097232037C4007F05C4 /* DeckController.swift */; };
+		86692098232037C4007F05C4 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692097232037C4007F05C4 /* CardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		8669208423202EDC007F05C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8669208623202EDC007F05C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86692093232036AA007F05C4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		86692097232037C4007F05C4 /* DeckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckController.swift; sourceTree = "<group>"; };
+		86692097232037C4007F05C4 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 		8669208E232030A1007F05C4 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				86692097232037C4007F05C4 /* DeckController.swift */,
+				86692097232037C4007F05C4 /* CardController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8669207B23202EDB007F05C4 /* AppDelegate.swift in Sources */,
-				86692098232037C4007F05C4 /* DeckController.swift in Sources */,
+				86692098232037C4007F05C4 /* CardController.swift in Sources */,
 				86692094232036AA007F05C4 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

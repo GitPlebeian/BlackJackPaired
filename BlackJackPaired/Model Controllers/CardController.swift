@@ -8,9 +8,9 @@
 
 import Foundation
 
-class DeckController {
+class CardController {
     
-    static let shared = DeckController()
+    static let shared = CardController()
     
     var cards: [Card] = []
     
@@ -43,5 +43,10 @@ class DeckController {
             return finalDeck
         }()
         self.cards = cards
+    }
+    
+    func getCard() -> Card {
+        let indexOfCard = Int.random(in: 0..<cards.count)
+        return cards.remove(at: indexOfCard)
     }
 }
