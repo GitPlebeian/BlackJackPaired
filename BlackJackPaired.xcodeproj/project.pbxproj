@@ -13,6 +13,8 @@
 		8669208523202EDC007F05C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8669208323202EDC007F05C4 /* LaunchScreen.storyboard */; };
 		86692094232036AA007F05C4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692093232036AA007F05C4 /* Card.swift */; };
 		86692098232037C4007F05C4 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692097232037C4007F05C4 /* CardController.swift */; };
+		8669209A232049BC007F05C4 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86692099232049BC007F05C4 /* Hand.swift */; };
+		8669209C23204AF3007F05C4 /* HandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8669209B23204AF3007F05C4 /* HandController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8669208623202EDC007F05C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86692093232036AA007F05C4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		86692097232037C4007F05C4 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		86692099232049BC007F05C4 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		8669209B23204AF3007F05C4 /* HandController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				86692093232036AA007F05C4 /* Card.swift */,
+				86692099232049BC007F05C4 /* Hand.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				86692097232037C4007F05C4 /* CardController.swift */,
+				8669209B23204AF3007F05C4 /* HandController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -194,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8669209A232049BC007F05C4 /* Hand.swift in Sources */,
 				8669207B23202EDB007F05C4 /* AppDelegate.swift in Sources */,
 				86692098232037C4007F05C4 /* CardController.swift in Sources */,
+				8669209C23204AF3007F05C4 /* HandController.swift in Sources */,
 				86692094232036AA007F05C4 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
