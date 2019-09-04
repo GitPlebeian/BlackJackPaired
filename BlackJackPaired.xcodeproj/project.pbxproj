@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6396131B23204EA4000987B4 /* BlackJackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396131A23204EA4000987B4 /* BlackJackViewController.swift */; };
 		8669207B23202EDB007F05C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8669207A23202EDB007F05C4 /* AppDelegate.swift */; };
 		8669208023202EDB007F05C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8669207E23202EDB007F05C4 /* Main.storyboard */; };
 		8669208223202EDC007F05C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8669208123202EDC007F05C4 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6396131A23204EA4000987B4 /* BlackJackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlackJackViewController.swift; path = BlackJackPaired/Resources/BlackJackViewController.swift; sourceTree = SOURCE_ROOT; };
 		8669207723202EDB007F05C4 /* BlackJackPaired.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJackPaired.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8669207A23202EDB007F05C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8669207F23202EDB007F05C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		8669208F232030A7007F05C4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6396131A23204EA4000987B4 /* BlackJackViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -212,8 +215,13 @@
 				8669209A232049BC007F05C4 /* Hand.swift in Sources */,
 				8669207B23202EDB007F05C4 /* AppDelegate.swift in Sources */,
 				86692098232037C4007F05C4 /* CardController.swift in Sources */,
+
 				8669209C23204AF3007F05C4 /* HandFunctions.swift in Sources */,
 				8669209E232051BC007F05C4 /* Player.swift in Sources */,
+
+				6396131B23204EA4000987B4 /* BlackJackViewController.swift in Sources */,
+				8669209C23204AF3007F05C4 /* HandController.swift in Sources */,
+
 				86692094232036AA007F05C4 /* Card.swift in Sources */,
 				866920A223205392007F05C4 /* PlayerFunctions.swift in Sources */,
 				866920A023205266007F05C4 /* GameController.swift in Sources */,
@@ -363,7 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2WP5X762NJ;
+				DEVELOPMENT_TEAM = 83YG3ZQCH4;
 				INFOPLIST_FILE = "$(SRCROOT)/BlackJackPaired/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2WP5X762NJ;
+				DEVELOPMENT_TEAM = 83YG3ZQCH4;
 				INFOPLIST_FILE = "$(SRCROOT)/BlackJackPaired/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
