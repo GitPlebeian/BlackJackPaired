@@ -26,6 +26,14 @@ class GameController  {
         house.hand.setInitialHand()
     }
     
+    func getHandValue() -> Int{
+        return player.hand.value
+    }
+    
+    func getHouseHandValue() -> Int {
+        return house.hand.value
+    }
+    
     func placeBet(int: Int) {
         player.bet = int
     }
@@ -64,6 +72,13 @@ class GameController  {
     
     func isHouseBust() -> Bool {
         return house.hand.isBust()
+    }
+    
+    func isHouseOver16() -> Bool {
+        if house.hand.value >= 17 {
+            return true
+        }
+        return false
     }
     
     func getPlayerCash() -> Int {
